@@ -19,5 +19,5 @@ runs:
   steps:
     - shell: bash
       run: |
-        python -m pip install lerobot-quality-gates
+        python -m pip install "${{ github.action_path }}"
         lerobot-quality-gates check "${{ inputs.path }}" --fail-on "${{ inputs.fail-on }}" --format "${{ inputs.format }}"
