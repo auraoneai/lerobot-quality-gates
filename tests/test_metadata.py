@@ -31,7 +31,8 @@ def test_pyproject_discovery_metadata():
     assert project["readme"] == "README.md"
     assert project["authors"][0]["email"] == "opensource@auraone.ai"
     assert {"lerobot", "training-readiness", "robotics-datasets"} <= set(project["keywords"])
-    assert "Topic :: Scientific/Engineering :: Robotics" in project["classifiers"]
+    assert "Topic :: Scientific/Engineering :: Artificial Intelligence" in project["classifiers"]
+    assert "Topic :: Scientific/Engineering :: Robotics" not in project["classifiers"]
     assert {"Source", "Documentation", "Issues", "Changelog", "Security", "GitHub Action"} <= set(project["urls"])
 
 

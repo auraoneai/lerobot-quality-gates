@@ -32,11 +32,11 @@ jobs:
 
 The Action does not expose the CLI's `--hf-repo` mode and does not download
 dataset media. It installs its Python package from the Action checkout. The
-Action and PyPI package are released as `0.1.6`.
+Action and PyPI package are released as `0.1.7`.
 
 To save a report as an artifact, run the registry package directly:
 
 ```yaml
-- run: python -m pip install "lerobot-quality-gates==0.1.6"
+- run: python -m pip install "lerobot-quality-gates==0.1.7"
 - run: lerobot-quality-gates check datasets/review-candidate --format json --out lerobot-quality-report.json
 ```

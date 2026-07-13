@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.7 - 2026-07-13
+
+- Remove an invalid PyPI classifier and republish the package and Action from
+  validated release metadata.
+
 ## 0.1.6 - 2026-07-13
 
 - Rewrite README, PyPI discovery metadata, and Action documentation with

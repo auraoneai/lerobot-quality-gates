@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lerobot-quality-gates"
-version = "0.1.6"
+version = "0.1.7"
 description = "Check LeRobot-style metadata, episodes, sensors, videos, labels, and dataset-card disclosures."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -29,7 +29,6 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Topic :: Scientific/Engineering :: Artificial Intelligence",
-  "Topic :: Scientific/Engineering :: Robotics",
   "Topic :: Software Development :: Quality Assurance",
 ]
 dependencies = []

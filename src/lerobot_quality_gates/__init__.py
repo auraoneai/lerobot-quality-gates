@@ -6,4 +6,4 @@ from .report import QualityReport, run_quality_gates
 
 __all__ = ["DatasetInfo", "Episode", "Finding", "QualityReport", "load_dataset", "run_quality_gates"]
 
-__version__ = "0.1.6"
+__version__ = "0.1.7"

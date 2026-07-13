@@ -16,7 +16,7 @@ disclosures before training or publication review.
 ## Install
 
 ```bash
-python -m pip install "lerobot-quality-gates==0.1.6"
+python -m pip install "lerobot-quality-gates==0.1.7"
 ```
 
 ## Verified Quickstart
@@ -103,9 +103,9 @@ expert-review claim.
 
 Verified on 2026-07-13:
 
-- PyPI: [`lerobot-quality-gates==0.1.6`](https://pypi.org/project/lerobot-quality-gates/0.1.6/)
-- GitHub Action release: [`v0.1.6`](https://github.com/auraoneai/lerobot-quality-gates/releases/tag/v0.1.6)
-- The Action and PyPI package share release `0.1.6`; the Action installs the
+- PyPI: [`lerobot-quality-gates==0.1.7`](https://pypi.org/project/lerobot-quality-gates/0.1.7/)
+- GitHub Action release: [`v0.1.7`](https://github.com/auraoneai/lerobot-quality-gates/releases/tag/v0.1.7)
+- The Action and PyPI package share release `0.1.7`; the Action installs the
   package source from its checked-out immutable commit.
 - All checked-in datasets are synthetic tutorial fixtures.
 
