@@ -1,1 +1,20 @@
-{"mock": true, "episode_id": 1}
+{
+  "episode_id": 1,
+  "frames": [
+    {
+      "timestamp": 0.0,
+      "observation.state": [0.2, 0.1, 0.0, -0.1, -0.2, -0.3],
+      "action": [0.0, 0.0, 0.0, 0.01, 0.0, 0.0]
+    },
+    {
+      "timestamp": 0.034,
+      "observation.state": [0.2, 0.1, 0.0, -0.09, -0.2, -0.3],
+      "action": [0.0, 0.0, 0.0, 0.0, 0.01, 0.0]
+    },
+    {
+      "timestamp": 0.067,
+      "observation.state": [0.2, 0.1, 0.0, -0.09, -0.19, -0.3],
+      "action": [0.0, 0.0, 0.0, 0.0, 0.0, 0.01]
+    }
+  ]
+}

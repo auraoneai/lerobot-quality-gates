@@ -1,20 +1,20 @@
-name: LeRobot Quality Gates
-description: Check LeRobot-style robotics datasets for training-readiness issues.
+name: Gate LeRobot Dataset Quality
+description: Check local LeRobot-style dataset metadata, episodes, media references, labels, and card disclosures.
 author: AuraOne
 branding:
   icon: check-circle
   color: green
 inputs:
   path:
-    description: Dataset path.
+    description: Repository-relative path to the local LeRobot-style dataset directory.
     required: false
     default: "."
   fail-on:
-    description: Severity threshold that fails the action.
+    description: "Lowest severity that fails the job: low, medium, high, critical, or none."
     required: false
     default: "high"
   format:
-    description: "Report format: markdown, json, hf-card, or badge."
+    description: "Report serialization written to the job log: markdown, json, hf-card, or badge."
     required: false
     default: "markdown"
 runs:
