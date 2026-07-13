@@ -64,7 +64,7 @@ data shards.
 Pin the published Action to its immutable release commit:
 
 ```yaml
-- uses: auraoneai/lerobot-quality-gates@4357e8229337af4f33091bccf96fee4886e829f7 # v0.1.6
+- uses: auraoneai/lerobot-quality-gates@3d46690c322914e9a90b1310b86ea7f3bba32747 # v0.1.7
   with:
     path: datasets/review-candidate
     fail-on: high
