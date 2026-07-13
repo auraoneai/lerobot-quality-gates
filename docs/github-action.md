@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - uses: auraoneai/lerobot-quality-gates@d370b5069ea9207b9732b5dd13e297f34b94f7bb # v0.1.6
+      - uses: auraoneai/lerobot-quality-gates@4357e8229337af4f33091bccf96fee4886e829f7 # v0.1.6
         with:
           path: datasets/review-candidate
           fail-on: high
