@@ -1,5 +1,5 @@
 name: Gate LeRobot Dataset Quality
-description: Check local LeRobot-style dataset metadata, episodes, media references, labels, and card disclosures.
+description: LeRobot dataset validator for CI. Checks local metadata, episodes, media references, labels, and card disclosures.
 author: AuraOne
 branding:
   icon: check-circle

@@ -1,8 +1,59 @@
 # lerobot-quality-gates
 
-`lerobot-quality-gates` checks a LeRobot-style dataset's metadata, episode
+**LeRobot dataset validator.** Check a LeRobot-style dataset's metadata, episode
 records, sensor and video references, intervention labels, and dataset-card
 disclosures before training or publication review.
+
+[![PyPI](https://img.shields.io/pypi/v/lerobot-quality-gates)](https://pypi.org/project/lerobot-quality-gates/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://github.com/auraoneai/lerobot-quality-gates/blob/main/LICENSE)
+
+```bash
+python -m pip install "lerobot-quality-gates==0.1.7"
+lerobot-quality-gates check examples/mock_lerobot_v3_good --format json --fail-on high
+```
+
+Output on the bundled fixture, run from a source checkout (exit code `0`; `root`
+shortened):
+
+```json
+{
+  "counts": {},
+  "episode_count": 2,
+  "finding_count": 0,
+  "findings": [],
+  "remote": false,
+  "root": "./examples/mock_lerobot_v3_good",
+  "source": "local"
+}
+```
+
+Add it to CI with the published Action:
+
+```yaml
+- uses: auraoneai/lerobot-quality-gates@v0.1.7
+  with:
+    path: datasets/review-candidate
+    fail-on: high
+```
+
+## What It Does and Doesn't Do
+
+It does:
+
+- validate `meta/info.json`, `meta/episodes.json`, timestamps, frame counts,
+  action/state shapes, camera-to-video references, and intervention labels;
+- check the dataset README for mock/tutorial and limitation disclosures;
+- emit Markdown, JSON, Hugging Face card snippets, or badge JSON, and fail CI
+  at a chosen severity.
+
+It doesn't:
+
+- decode videos, load training shards, or measure demonstration quality;
+- establish training readiness, benchmark quality, or robot safety.
+
+Part of the AuraOne robotics dataset QA workflow:
+[lerobot-quality-gates](https://auraone.ai/open/lerobot-quality-gates) →
+[Robotics Studio](https://auraone.ai/open/robotics-studio).
 
 ## At a Glance
 
@@ -113,3 +164,8 @@ Verified on 2026-07-13:
 
 Run the gate on a review candidate before training, triage every high finding,
 and paste the generated Hugging Face snippet into the dataset card.
+
+---
+
+Need reviewed demonstration data or dataset quality operations at scale?
+[Talk to AuraOne](https://auraone.ai/contact?from=open:lerobot-quality-gates)
